@@ -1,22 +1,24 @@
-## Automated Setup & Installation Guide for Hadoop Single Node Cluster Environment (Pseudo Distributed mode)
-## using light-weight script with Spark/Kafka/Cassandra/MongoDB
+### Automated Setup & Installation Guide for Hadoop Single Node Cluster Environment
+### using light-weight script with Spark/Kafka/Cassandra/MongoDB
+####(Pseudo Distributed mode)
 
-### Single Node _Hadoop/Spark/HBase/Kafka/Cassandra/MongoDB_ Cluster on Windows using virtualization
+
+#### Single Node _Hadoop/Spark/HBase/Kafka/Cassandra/MongoDB_ Cluster on Windows using virtualization
 
 Automation Script for creating single node _hadoop/spark/kafka/cassanda/mongodb_ cluster on Windows 
 using Vagrant & Oracle Virtual Box 
 
-### Note :- To run this script, "Virtualization" property should be enabled for the Desktop/Laptop with Admin right
+#### Note :- To run this script, "Virtualization" property should be enabled for the Desktop/Laptop with Admin right
 
-## Connection architecture
+### Connection architecture
 
 **Windows Environment --> Oracle Virtual Box --> Linux Environment**
 
-## Functions of the template & script -
+### Functions of the template & script -
 1. Install Hadoop stack, Spark, Kafka, Cassandra, MongoDB into Linux VM
 
-## Pre-requisite Software
-### Download & Install the following software on Windows before running the script
+### Pre-requisite Software
+#### Download & Install the following software on Windows before running the script
 
 1. Download and Install Oracle Virtual Box
    	
@@ -26,7 +28,7 @@ using Vagrant & Oracle Virtual Box
   
 	https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi
   
-  _After vagrant installation , restart the system _
+  ##### After vagrant installation , restart the system
 	
 3. Download SmarTTY
 
@@ -44,9 +46,9 @@ using Vagrant & Oracle Virtual Box
 	
 
 	
-### ===============================================================
-##  INSTALLATION PROCESS
-### ===============================================================
+##### ==================================================
+###  INSTALLATION PROCESS
+##### ==================================================
 
 #### Pre-requisite :- During entire installation procedure your Laptop/Desktop should be connected with Internet.
 #### Minimum RAM Required :- 8 GB
