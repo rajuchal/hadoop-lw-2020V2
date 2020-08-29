@@ -55,16 +55,22 @@ using Vagrant & Oracle Virtual Box
 #### Minimum RAM Required :- 8 GB
 
 1. Download the script file in Windows
-    https://github.com/rajuchal/hadoop-lw-2020V2/archive/master.zip
-2. "hadoop-lw-2020V2-master.zip" file will downloaded , Unzip the file "hadoop-lw-2020V2-master.zip"
-3. Copy the ectracted root folder "hadoop-lw-2020V2-master" into C-drive
+
+#####    https://github.com/rajuchal/hadoop-lw-2020V2/archive/master.zip
+
+2. _"hadoop-lw-2020V2-master.zip"_ file will downloaded , Unzip the file "hadoop-lw-2020V2-master.zip"
+
+3. Copy the extracted root folder "hadoop-lw-2020V2-master" into C-drive
+
 4. Open the Windows Command Prompt
+
 5. Change the directory to the extracted folder - "hadoop-lw-2020V2-master" in the Command Prompt
+
 6. Run “setup.cmd”
 
 ##### C:\hadoop-lw-2020V2-master> setup.cmd
 
-##### ------------- Wait till you getback the Command Prompt
+##### ------------- Wait till you get back the Command Prompt
 ##### ------------- Depending on the bandwidh total installation may take 45 mins to 1 hr time
 
 6. After getting back the Command Prompt type "vagrant ssh" to login to Linux Box
