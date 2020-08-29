@@ -1,0 +1,7 @@
+vagrant box add ubuntu/trusty64 --insecure
+vagrant up
+
+
+
+vagrant box add ubuntu/xenial64 --insecure
+vagrant up

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+    <name>hive.exec.stagingdir</name>
+    <value>.hive-staging</value>
+    <description>Directory name that will be created inside table locations in order to support HDFS encryption. This is replaces ${hive.exec.scratchdir} for query results with the exception of read-only tables. In all cases ${hive.exec.scratchdir} is still used for other temporary files, such as job plans.</description>
+  </property>
+  <property>
+    <name>hive.exec.scratchdir</name>
+    <value>/tmp/hive</value>
+    <description>HDFS root scratch dir for Hive jobs which gets created with write all (733) permission. 
+		For each connecting user, an HDFS scratch dir: 	${hive.exec.scratchdir}/		&lt;username&gt; 
+		is created, with ${hive.scratch.dir.permission}.</description>
+  </property>
+
+		<property>
+			<name>javax.jdo.option.ConnectionURL</name>
+			<value>jdbc:mysql://localhost/metastore_db?useSSL=false</value>
+            <description>metadata is stored in a MySQL server</description>
+           </property>
+
+            <property>
+           <name>javax.jdo.option.ConnectionDriverName</name>
+            <value>com.mysql.jdbc.Driver</value>
+            <description>MySQL JDBC driver class</description>
+            </property>
+
+            <property>
+           <name>javax.jdo.option.ConnectionUserName</name>
+            <value>hiveuser</value>
+           <description>user name for connecting to mysql server </description>
+            </property>
+
+            <property>
+            <name>javax.jdo.option.ConnectionPassword</name>
+            <value>hivepassword</value>
+            <description>password for connecting to mysql server </description>
+            </property>
+			
+			<property>
+				<name>hive.metastore.schema.verification</name>
+				<value>false</value>
+			</property>
+
+			<property>
+				<name>hive.server2.enable.doAs</name>
+				<value>false</value> 
+			</property>
+
+
+</configuration>

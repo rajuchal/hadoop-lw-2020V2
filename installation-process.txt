@@ -1,0 +1,84 @@
+1) Download and Install Oracle Virtual Box
+   ------------------
+	
+	https://download.virtualbox.org/virtualbox/5.2.38/VirtualBox-5.2.38-136252-Win.exe
+
+	
+2) Download and Install Vagrant version 2.2.4 ( )
+   -----------------------------------
+
+	https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.msi
+	
+	
+3) Download SmarTTY
+	http://sysprogs.com/getfile/409/SmarTTY-3.1.msi
+	
+	OR
+	
+	Download MobaXTerm
+	
+	https://download.mobatek.net/2012020021813110/MobaXterm_Portable_v20.1.zip
+
+4) Download WinSCP
+
+	https://winscp.net/eng/download.php
+	
+
+
+5) Eclipse Download (OPTIONAL)
+
+	https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//technology/epp/downloads/release/2020-06/R/eclipse-java-2020-06-R-win32-x86_64.zip
+
+	unzip and run it
+	
+	
+===============================================================
+INSTALLATION PROCESS
+===================================
+
+Pre-requisite :- During entire installation procedure your Laptop/Desktop should be connected with Internet.
+Minimum RAM Required :- 8 GB
+
+1) Unzip the file in C-Drive
+2)	Open the Windows Command Prompt
+3)	Go within the "extracted folder/HadoopPseudo_Light....." directory in the Command Prompt
+4)	Run “setup.cmd”
+
+C:\HadoopPseudo_Light-2020v1> setup.cmd
+
+		------------- Wait till you getback the Command Prompt
+		------------- Depending on the bandwidh total installation may take 45 mins to 1 hr time
+
+5) After getting back the Command Prompt type "vagrant ssh" to login to Linux Box
+
+C:\HadoopPseudo_Light-2020v1>vagrant ssh
+
+vagrant@master:~$ jps
+11538 Jps
+9716 DataNode
+9942 SecondaryNameNode
+10520 Master
+9528 NameNode
+10107 ResourceManager
+10446 NodeManager
+10750 Worker
+vagrant@master:~$
+
+------------------------------------------------------
+=========================================================
+USE SmarTTY/MobaXTerm/ WinSCP to Connect with the Linux Node
+
+
+============================================================
+
+
+Happy Clustering 
+
+=============================================================================
+
+
+Public Key
+=====================
+
+curl https://raw.githubusercontent.com/mitchellh/vagrant/master/keys/vagrant.pub > ~/.ssh/authorized_keys
+
