@@ -1,7 +1,7 @@
 ### Automated Setup & Installation Guide for Hadoop Single Node Cluster Environment
 ### using light-weight script with Spark/Kafka/Cassandra/MongoDB
-####(Pseudo Distributed mode)
-#####==============================================================================
+#### (Pseudo Distributed mode)
+##### ==============================================================================
 
 #### Single Node _Hadoop/Spark/HBase/Kafka/Cassandra/MongoDB_ Cluster on Windows using virtualization
 
@@ -9,7 +9,7 @@ Automation Script for creating single node _hadoop/spark/kafka/cassanda/mongodb_
 using Vagrant & Oracle Virtual Box 
 
 #### Note :- To run this script, "Virtualization" property should be enabled for the Desktop/Laptop with Admin right
-#####==============================================================================
+##### ==============================================================================
 ### Connection architecture
 
 **Windows Environment --> Oracle Virtual Box --> Linux Environment**
@@ -17,7 +17,7 @@ using Vagrant & Oracle Virtual Box
 ### Functions of the template & script -
 1. Install Hadoop stack, Spark, Kafka, Cassandra, MongoDB into Linux VM
 
-#####==============================================================================
+##### ==============================================================================
 ### Pre-requisite Software
 #### Download & Install the following software on Windows before running the script
 
@@ -82,7 +82,7 @@ using Vagrant & Oracle Virtual Box
 	10750 Worker
 
 
-##### =====================================================
+##### ==========================================================================
 ##### USE SmarTTY/MobaXTerm/ WinSCP to Connect with the Linux Node fron Windows
 
 ##### ===========================================================================
