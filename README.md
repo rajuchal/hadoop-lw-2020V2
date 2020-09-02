@@ -62,7 +62,7 @@ using Vagrant & Oracle Virtual Box
 
 3. Copy the extracted root folder "hadoop-lw-2020V2-master" into C-drive
 
-4. Open the Windows Command Prompt
+4. Open the Windows Command Prompt as "Administrator"
 
 5. Change the directory to the extracted folder - "hadoop-lw-2020V2-master" in the Command Prompt
 
