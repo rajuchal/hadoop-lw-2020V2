@@ -119,7 +119,7 @@ wget -q https://archive.apache.org/dist/kafka/2.4.1/kafka_2.11-2.4.1.tgz
 
 # Download Apache Cassandra
 echo "Dowloading Cassandra"
-wget -q http://apachemirror.wuchna.com/cassandra/3.0.21/apache-cassandra-3.0.21-bin.tar.gz
+wget -q http://apachemirror.wuchna.com/cassandra/3.0.22/apache-cassandra-3.0.22-bin.tar.gz
 
 # Download MongoDB
 echo "Dowloading MongoDB"
@@ -198,9 +198,9 @@ echo "Kafka Extraction Completed "
 echo "Cassandra Extraction Started "
 #Extract Cassandra 
 
-tar xf apache-cassandra-3.0.21-bin.tar.gz 
-mv apache-cassandra-3.0.21 cassandra
-rm apache-cassandra-3.0.21-bin.tar.gz
+tar xf apache-cassandra-3.0.22-bin.tar.gz 
+mv apache-cassandra-3.0.22 cassandra
+rm apache-cassandra-3.0.22-bin.tar.gz
 echo "Cassandra Extraction Completed "
 
 echo "MongoDB Extraction Started "
