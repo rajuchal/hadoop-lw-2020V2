@@ -78,7 +78,8 @@ mkdir -p /home/vagrant/bigdata/zookeeper
 
 # Download hadoop binaries
 echo "Dowloading Hadoop"
-wget  -q https://downloads.apache.org/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
+#wget  -q https://downloads.apache.org/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
+wget  -q https://downloads.apache.org/hadoop/common/stable2/hadoop-2.10.1.tar.gz
 
 # Download Spark pre-built with hadoop 2.7+
 echo "Dowloading Spark"
@@ -102,8 +103,9 @@ wget -q  https://downloads.lightbend.com/scala/2.12.2/scala-2.12.2.tgz
 echo "Dowloading Hive"
 #wget  http://mirrors.estointernet.in/apache/hive/hive-1.2.2/apache-hive-1.2.2-bin.tar.gz
 #wget -q http://apachemirror.wuchna.com/hive/hive-2.3.7/apache-hive-2.3.7-bin.tar.gz
+#wget -q http://mirrors.estointernet.in/apache/hive/hive-2.3.7/apache-hive-2.3.7-bin.tar.gz
 
-wget -q http://mirrors.estointernet.in/apache/hive/hive-2.3.7/apache-hive-2.3.7-bin.tar.gz
+wget -q http://mirrors.estointernet.in/apache/hive/hive-2.3.8/apache-hive-2.3.8-bin.tar.gz
 
 
 
@@ -119,7 +121,9 @@ wget -q https://archive.apache.org/dist/kafka/2.4.1/kafka_2.11-2.4.1.tgz
 
 # Download Apache Cassandra
 echo "Dowloading Cassandra"
-wget -q http://apachemirror.wuchna.com/cassandra/3.0.22/apache-cassandra-3.0.22-bin.tar.gz
+#wget -q http://apachemirror.wuchna.com/cassandra/3.0.22/apache-cassandra-3.0.22-bin.tar.gz
+wget -q https://apachemirror.wuchna.com/cassandra/3.0.24/apache-cassandra-3.0.24-bin.tar.gz
+
 
 # Download MongoDB
 echo "Dowloading MongoDB"
@@ -141,9 +145,9 @@ wget -q https://downloads.apache.org/hbase/1.6.0/hbase-1.6.0-bin.tar.gz
 
 echo "Hadoop Extraction Started "
 # Extract hadoop binaries
-tar -xf hadoop-2.9.2.tar.gz
-mv hadoop-2.9.2 hadoop
-rm hadoop-2.9.2.tar.gz
+tar -xf hadoop-2.10.1.tar.gz
+mv hadoop-2.10.1 hadoop
+rm hadoop-2.10.1.tar.gz
 echo "Hadoop Extraction Completed "
 
 
@@ -163,9 +167,9 @@ echo "Java Extraction Completed "
 
 echo "Hive Extraction Started "
 # Extract Hive binaries
-tar -xf apache-hive-2.3.7-bin.tar.gz
-mv apache-hive-2.3.7-bin hive
-rm  apache-hive-2.3.7-bin.tar.gz
+tar -xf apache-hive-2.3.8-bin.tar.gz
+mv apache-hive-2.3.8-bin hive
+rm  apache-hive-2.3.8-bin.tar.gz
 echo "Hive Extraction Completed "
 
 echo "Pig Extraction Started "
@@ -198,9 +202,9 @@ echo "Kafka Extraction Completed "
 echo "Cassandra Extraction Started "
 #Extract Cassandra 
 
-tar xf apache-cassandra-3.0.22-bin.tar.gz 
-mv apache-cassandra-3.0.22 cassandra
-rm apache-cassandra-3.0.22-bin.tar.gz
+tar xf apache-cassandra-3.0.24-bin.tar.gz 
+mv apache-cassandra-3.0.24 cassandra
+rm apache-cassandra-3.0.24-bin.tar.gz
 echo "Cassandra Extraction Completed "
 
 echo "MongoDB Extraction Started "
@@ -362,7 +366,7 @@ echo " Running sample WordCount Mapreduce Program  "
 /home/vagrant/bigdata/hadoop/bin/hdfs dfs -cat /user/vagrant/wordcount/input/README.txt
 
 # Run the wordcount example bundled with the hadoop binaries
-/home/vagrant/bigdata/hadoop/bin/hadoop jar /home/vagrant/bigdata/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar wordcount wordcount/input wordcount/output
+/home/vagrant/bigdata/hadoop/bin/hadoop jar /home/vagrant/bigdata/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar wordcount wordcount/input wordcount/output
 
 # Verify the output
 /home/vagrant/bigdata/hadoop/bin/hdfs dfs -cat /user/vagrant/wordcount/output/part*
